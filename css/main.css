@@ -1,5 +1,5 @@
 .container{
-    max-width: 1440px;
+    max-width: 945px;
     margin: auto;
 }
 
@@ -11,7 +11,7 @@ body{
 
 /* Header*/
 header{
-    background-image:  url("source/bg.svg") ;
+    background-image:  url("../source/bg.svg") ;
     height: 769px;
     width: auto;
     border-radius: 0px;
@@ -148,7 +148,7 @@ img{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 250px;
+    margin: 0 0;
 }
 .our-story-card{
     margin-left: 21px;
@@ -214,4 +214,106 @@ img{
     color: #FFFFFF;
     text-transform: uppercase;
     margin: 0;
+}
+
+
+
+
+
+.our-capabilities{
+    margin-top: 120px;
+}
+
+.our-capabilities-header-block{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.our-capabilities-header{
+    position: relative; 
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 2.30625px;
+    text-transform: uppercase;
+    color: #48555B;
+    width: 200px;
+    margin: 0;
+}
+
+.our-capabilities-header::after{
+    position: absolute;
+    left: 13%;
+    transform: translateX(-50%);
+    content: '';
+    bottom: 5px;
+    width: 50px;
+    height: 2px;
+    background: #00A4E5;
+}
+
+.our-capabilities-text{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 19px;
+    letter-spacing: 0.2px;
+    color: #48555B;
+    margin: 0;
+    width: 405px;
+    margin-left: 120px;
+}
+
+.our-capabilities-button{
+    width: 150px;
+    height: 40px;
+    background-color: #00A4E5;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    margin: 0;
+    padding: 0;
+}
+
+.our-capabilities-cards{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.our-capabilities-card{
+    background: #FFFFFF;
+    border: 1px solid #E6E6E6;
+    padding: 39px 22px;
+    width: 249px;
+    height: 242px;
+}
+
+.our-capabilities-card-img{
+    width: 65.6px;
+    height: 75px;
+}
+
+.our-capabilities-card-header{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.426667px;
+    color: #48555B;
+}
+
+.our-capabilities-card-text{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 23px;   
+    letter-spacing: 0.1875px;
+    color: #48555B;
 }
