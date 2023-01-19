@@ -1,5 +1,5 @@
 .container{
-    max-width: 1440px;
+    max-width: 945px;
     margin: auto;
 }
 
@@ -148,7 +148,7 @@ img{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 250px;
+    margin: 0 0;
 }
 .our-story-card{
     margin-left: 21px;
