@@ -17,9 +17,9 @@ header{
     border-radius: 0px;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     margin: auto;
     color: white;
-    background-position: center;
     
 }
 
@@ -82,14 +82,15 @@ img{
     display: flex;
     justify-content: space-around;
     border: 1px solid #E6E6E6;
+    align-items: center;
 }
 .nav-list{
     list-style-type: none;
     display: flex;
     justify-content: space-between;
     width: 406.5px;
-    margin: 25px 0 0 0;
     padding: 0;
+    
 }
 
 .nav-element{
@@ -316,4 +317,290 @@ img{
     line-height: 23px;   
     letter-spacing: 0.1875px;
     color: #48555B;
+}
+
+
+
+
+.get-in-touch{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../source/bg-get-in-touch.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    justify-content: center;
+}
+
+.get-in-touch-header{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    
+    text-align: center;
+    letter-spacing: 0.15px;
+    color: #48555B;
+    width: 350px;
+    margin: 0;
+}
+
+.get-in-touch-button{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+    background: #00A4E5;
+    width: 150px;
+    height: 40px;
+    border: none;
+    text-transform: uppercase;
+    margin-top: 35px;
+   
+}
+
+.get-in-touch-group{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    transform: translateY(-40%);
+}
+
+
+
+.sign-up{
+    background-color: #171819;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign-up-header{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.846154px;
+    color: #FFFFFF;
+    
+}
+
+
+::placeholder{
+    color: #48555B;
+}
+
+.sign-up-input{
+    box-sizing: border-box;
+    width: 250px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    margin-left: 70px;
+    padding: 10px 16px;
+
+}
+
+.sign-up-button{
+    text-transform: uppercase;
+    width: 150px;
+    height: 40px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+    background-color: #00A4E5;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+
+.faq>.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 945px;
+}
+
+.faq{
+    height: 240px;
+    background-color: #141A20;
+    display: flex;
+    align-items: center;
+
+}
+
+.faq-about{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.faq-about-p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 19px;
+    letter-spacing: 0.85px;
+    color: #FFFFFF;
+    max-width: 250px;
+}
+
+.faq-about-konstruct{
+    height: 21px;
+    width: auto;
+    margin-bottom: 17px;
+}
+
+.faq-about-company{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: 0.846154px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+   
+}
+
+.links{
+    text-transform: uppercase;
+    
+}
+
+.faq-links-header{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 0.846154px;
+    color: #FFFFFF; 
+    
+}
+
+.faq-links{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.faq-link{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 25px;
+    letter-spacing: 0.846154px;
+    color: #FFFFFF;
+}
+
+
+.FAQ-links{
+    margin: 0;
+    list-style-type: none;
+    text-transform: uppercase;
+    padding: 0;
+    
+}
+
+.blog-links{
+    margin: 0;
+    list-style-type: none;
+    text-transform: uppercase;
+    padding: 0;
+    
+}
+
+.blog-link{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 25px;
+    letter-spacing: 0.846154px;
+    color: #FFFFFF;
+}
+
+
+.contact-us-list{
+    list-style-type: none;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 0.846154px;
+    color: #FFFFFF;
+    max-width: 110px;
+    padding: 0;
+}
+
+
+.contact-us-item{
+    margin-top: 10px;
+}
+
+.contact-us-item:first-child{
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+    
+}
+
+.icon{
+    color: white;
+    list-style-type: none;
+}
+
+.icons-group{
+    width: 86px;
+    transform: translateY(-160%);
+}
+
+.footer>.container{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.footer{
+    background-color: #171819;
+    margin: 0;
+    padding: 0;
+    height: 60px;
+}
+.footer-text{
+    width: 310px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.846154px;
+    color: #FFFFFF;
+    align-self: center;
+
 }
