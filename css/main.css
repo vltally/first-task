@@ -116,6 +116,9 @@ img{
     color: white;
     transition: all .2s ease-in-out;
 }
+.header_scrolltext> a{
+    color: inherit;
+}
 
 .header_scrolltext:hover{
     transform: scale(1.2);
@@ -888,9 +891,7 @@ img{
         margin-bottom: 31px;
     }
 
-    .header_scrolltext> a{
-        color: inherit;
-    }
+   
 
     .navbar-mobile{
         display: flex;
