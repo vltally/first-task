@@ -308,10 +308,10 @@ img{
 
 .our-capabilities-header::after{
     position: absolute;
-    left: 13%;
+    left: 50%;
     transform: translateX(-50%);
     content: '';
-    bottom: -5px;
+    bottom: -10px;
     width: 50px;
     height: 2px;
     background: #00A4E5;
@@ -366,7 +366,7 @@ img{
     justify-content: space-between;
     transition: all .2s ease-in-out;
     flex-basis: 30%;
-    margin: 0 15.5px 15.5px 15.5px;
+    margin: 0 15.5px 30px 15.5px;
 }
 
 .our-capabilities-card:hover{
@@ -749,17 +749,17 @@ img{
     }
     
     .our-capabilities{
-        margin-top: 25px;
+        margin-top: 49.5px;
     }
 
     .our-capabilities-text{
         max-width: 600px;
         text-align: center;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
     }
 
     .our-capabilities-header{
-        margin-bottom: 25px;
+        margin-bottom: 32px;
     }
 
     .our-capabilities-cards{
@@ -817,15 +817,18 @@ img{
 
     .our-story-text{
         margin-left: 0;
-        margin-bottom: 15px;
+        margin-bottom: 24.5px;
     }
 
     .our-capabilities-cards{
-        margin-top: 25px;
+        margin-top: 50px;
     }
 
     .get-in-touch-header{
         font-size: 26px;
+    }
+    .our-story-title-text{
+        margin-bottom: 20px;
     }
 }
 
@@ -838,6 +841,10 @@ img{
     }
 }
 @media(max-width:600px){
+    .our-story-title{
+        margin-bottom: 22px;
+        margin-top: 50px;
+    }
     .empty{
         flex-basis: 33.3%;
     }
@@ -879,6 +886,10 @@ img{
         font-size: 11px;
         letter-spacing: normal;
         margin-bottom: 31px;
+    }
+
+    .header_scrolltext> a{
+        color: inherit;
     }
 
     .navbar-mobile{
@@ -995,6 +1006,9 @@ img{
         flex-direction: column;
     }
 
+    .faq{
+        padding-top: 50px;
+    }
     .our-story-cards{
         flex-direction: row;
         flex-basis: auto;
@@ -1008,6 +1022,11 @@ img{
 
     .icons{
         justify-content: center;
+        align-items: center;
+    }
+    .icon-li{
+        margin-right: 10px;
+        margin-left: 10px;
     }
 
     
@@ -1033,4 +1052,8 @@ img{
         text-align: center;
     }
 
+
+    .icons{
+        margin: 50px 0 30px;
+    }
 }

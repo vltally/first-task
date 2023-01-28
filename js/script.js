@@ -2,6 +2,7 @@
 
 const iconMenu = document.querySelector('.menu_icon');
 const menuBody = document.querySelector('.nav-mobile');
+
 if (iconMenu) {
     iconMenu.addEventListener("click", function (e) {
         document.body.classList.toggle('_lock');
@@ -14,6 +15,8 @@ if (iconMenu) {
 
 const menuLinks = document.querySelectorAll('.nav-element[data-goto]');
 
+
+
 console.log(menuLinks);
 if (menuLinks.length > 0) {
     menuLinks.forEach(menuLink => {
@@ -22,9 +25,12 @@ if (menuLinks.length > 0) {
 }
     function onMenuLinkClick(e) {
         const menuLink = e.target;
+        console.log(menuLink.dataset.goto);
+        console.log(document.querySelector(menuLink.dataset.goto));
         if(menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)){
             const gotoBlock = document.querySelector(menuLink.dataset.goto);
             const gotoBlockValue = gotoBlock.getBoundingClientRect().top + window.scrollY - document.querySelector('.navbar-mobile').offsetHeight;
+
 
             if(iconMenu.classList.contains("_active")){
                 document.body.classList.remove("_lock");
