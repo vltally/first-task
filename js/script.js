@@ -1,10 +1,10 @@
 // burger
 
 const iconMenu = document.querySelector('.menu_icon');
-const menuBody = document.querySelector('.nav-mobile');
+const menuBody = document.querySelector('.nav-list');
 
 if (iconMenu) {
-    iconMenu.addEventListener("click", function (e) {
+    iconMenu.addEventListener("click", function () {
         document.body.classList.toggle('_lock');
         iconMenu.classList.toggle('_active');
         menuBody.classList.toggle('_active');
@@ -14,8 +14,6 @@ if (iconMenu) {
 //scroll
 
 const menuLinks = document.querySelectorAll('.nav-element[data-goto]');
-
-
 
 console.log(menuLinks);
 if (menuLinks.length > 0) {
@@ -29,7 +27,7 @@ if (menuLinks.length > 0) {
         console.log(document.querySelector(menuLink.dataset.goto));
         if(menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)){
             const gotoBlock = document.querySelector(menuLink.dataset.goto);
-            const gotoBlockValue = gotoBlock.getBoundingClientRect().top + window.scrollY - document.querySelector('.navbar-mobile').offsetHeight;
+            const gotoBlockValue = gotoBlock.getBoundingClientRect().top + window.scrollY - document.querySelector('.nav').offsetHeight;
 
 
             if(iconMenu.classList.contains("_active")){
