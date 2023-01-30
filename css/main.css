@@ -76,6 +76,7 @@ img{
     text-align: center;
     height: auto;
     padding: 306.7px 0 221px 0;
+    
 }
 .header_konstruct{
     padding-top: 40px;
@@ -115,6 +116,8 @@ img{
     text-align: center;
     color: white;
     transition: all .2s ease-in-out;
+    width: 80%;
+    align-self: center;
 }
 .header_scrolltext> a{
     color: inherit;
