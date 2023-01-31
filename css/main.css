@@ -1,5 +1,8 @@
 /*------------------------------------------------------------------*/
 
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;500;600;700;800&display=swap');
+
 /* Global setting */
 
 ::placeholder{
@@ -82,7 +85,18 @@ img{
 }
 .header_konstruct{
     padding-top: 40px;
+    
 }
+
+.header_konstruct>img{
+    width: 103px;
+    height: auto;
+}
+
+.header_konstruct.container{
+    padding-inline: 0;
+}
+
 
 .header_header{
     font-family: 'Bebas Neue', sans-serif;
@@ -100,11 +114,16 @@ img{
     line-height: 1.375rem;
 }
 .header{
-    background: url("../source/bg.jpg") center / cover no-repeat;
+    background: url("../source/bg.webp") center / cover no-repeat;
     color: white; 
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+}
+
+.header_konstruct-nav>img{
+    width: 103px;
+    height: auto;
 }
   
 .header_scrolltext{
@@ -165,7 +184,8 @@ img{
 }
 
 .nav-konstruct{
-    height: 100%;
+    width: 81px;
+    height: auto;
     padding: 24px 0 23px 0;
 }
 
@@ -190,7 +210,7 @@ img{
     width: 130px;
 }
 
-.our-story-title h6{
+.our-story-title h2{
     text-transform: uppercase;
     font-size: 1.125rem;
     line-height: 25px;
@@ -217,6 +237,8 @@ img{
 }
 
 .our-story-img{
+    max-width: 140px;
+    max-height: 224px;
     width: 100%;
     height: auto;
 }
@@ -380,8 +402,8 @@ img{
 }
 
 .our-capabilities-card-img{
-    width: 65.6px;
-    height: 75px;
+    width: 65px;
+    height: auto;
 }
 
 .our-capabilities-card-header{
@@ -410,7 +432,7 @@ img{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: url("../source/bg-get-in-touch.jpg") center / cover no-repeat;
+    background: url("../source/bg-get-in-touch.webp") center / cover no-repeat;
     height: 499px;
     justify-content: center;
     margin-top: 115px;
@@ -665,13 +687,18 @@ img{
     justify-content: space-between;
 }
 
-.icon{
+/* .icon{
+    transition: all .2s ease-in-out;
+} */
+
+.icon:hover>img{
+    transform: scale(1.2);  
+    fill: #00A4E5;
     transition: all .2s ease-in-out;
 }
 
-.icon:hover{
-    transform: scale(1.2);  
-    color: #00A4E5;
+.icon>img{
+    transition: all .2s ease-in-out;
 }
 .icon{
     color: white;
@@ -692,6 +719,10 @@ img{
 
 .contact-us-item{
     margin-top: 10px;
+}
+
+.icon-li{
+    width: 12px;
 }
 /*------------------------------------------------------------------*/
 
