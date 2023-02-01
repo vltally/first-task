@@ -920,6 +920,13 @@ img{
         z-index: 10;
     }
 
+    .header{
+        background: url("../source/bg-mobile.webp") center / cover no-repeat;
+    }
+
+    .get-in-touch{
+        background: url("../source/bg-get-in-touch-moblie.webp") center / cover no-repeat;
+    }
     .black_back{
         width: 100%;
         height: 65px;
