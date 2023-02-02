@@ -939,7 +939,7 @@ img{
     }
 
     .get-in-touch{
-        background: url("../source/bg-get-in-touch-moblie.webp") center / cover no-repeat;
+        /* background: url("../source/bg-get-in-touch-moblie.webp") center / cover no-repeat; */
     }
     .black_back{
         width: 100%;
