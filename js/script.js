@@ -45,13 +45,9 @@ if (menuLinks.length > 0) {
 
 /* lazy load*/
 
-const lazyImages = document.querySelectorAll("img[data-src]");
-
+const lazyImages = document.querySelectorAll("img[data-src]"); 
 const windowHeight = document.documentElement.clientHeight;
-
-
 let lazyImagesPositions = [];
-
 if(lazyImages.length > 0){
     lazyImages.forEach(img =>{
         if(img.dataset.src){
@@ -61,9 +57,7 @@ if(lazyImages.length > 0){
         }
     });
 }
-
 window.addEventListener("scroll", lazyScroll);
-
 function lazyScroll(){
     if(document.querySelectorAll("img[data-src]").length > 0){
         lazyScrollCheck()
@@ -74,7 +68,6 @@ function lazyScrollCheck(){
     let imgIndex = lazyImagesPositions.findIndex(
         item => window.scrollY > item - windowHeight
     );
-
     if(imgIndex >= 0){
         if(lazyImages[imgIndex].dataset.src){
             lazyImages[imgIndex].src = lazyImages[imgIndex].dataset.src;

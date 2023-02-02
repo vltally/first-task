@@ -114,11 +114,20 @@ img{
     line-height: 1.375rem;
 }
 .header{
-    background: url("../source/bg.webp") center / cover no-repeat;
+    /* background: url("../source/bg.webp") center / cover no-repeat; */
     color: white; 
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    position: relative;
+}
+
+.bg-image{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
 }
 
 .header_konstruct-nav>img{
@@ -297,10 +306,10 @@ img{
 }
 
 .our-story-card-text{
-    width: 100%;
+    width: 70%;
     position: absolute;
     top: 20%;
-    left: 60%;
+    left: 40%;
     transform: translate(-50%, -50%);
     font-style: normal;
     font-weight: 800;
@@ -442,11 +451,10 @@ img{
 /* get in touch */
 
 .get-in-touch{
-    content-visibility: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: url("../source/bg-get-in-touch.webp") center / cover no-repeat;
+    /* background: url("../source/bg-get-in-touch.webp") center / cover no-repeat; */
     height: 499px;
     justify-content: center;
     margin-top: 115px;
@@ -772,7 +780,7 @@ img{
 
     .our-story-card-text{
         font-size: 18px;
-        left: 55%;
+        left: 43%;
     }
 }
 
@@ -794,6 +802,7 @@ img{
         height: auto;
         margin-bottom: 10px;
     }
+
 
     .our-capabilities-header-block{
         flex-direction: column;
@@ -922,7 +931,11 @@ img{
     }
 
     .header{
-        background: url("../source/bg-mobile.webp") center / cover no-repeat;
+        /* background: url("../source/bg-mobile.webp") center / cover no-repeat; */
+    }
+
+    .our-story-card-text{
+        left: 40%;
     }
 
     .get-in-touch{
@@ -1161,6 +1174,12 @@ img{
 
     .icons{
         margin: 50px 0 30px;
+    }
+}
+
+@media (max-width: 380px) {
+    .our-story-card-text{
+        font-size: 12px;
     }
 }
 
