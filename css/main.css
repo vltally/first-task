@@ -735,13 +735,13 @@ img{
     transition: all .2s ease-in-out;
 } */
 
-.icon:hover{
+.icon> img:hover {
     transform: scale(1.2);  
     color: #00A4E5;
     transition: all .2s ease-in-out;
 }
 
-.icon{
+.icon> img{
     transition: all .2s ease-in-out;
 }
 .icon{
