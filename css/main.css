@@ -2,7 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;500;600;700;800&display=swap');
 
-
 /* Global setting */
 
 ::placeholder{
@@ -83,10 +82,6 @@ img{
     padding: 306.7px 0 221px 0;
     
 }
-.header_konstruct{
-    padding-top: 40px;
-    
-}
 
 .header_konstruct>img{
     width: 103px;
@@ -104,7 +99,7 @@ img{
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 0.356875rem;
-    line-height: 4.5rem;
+    line-height: 72px;
 }
 
 .header_text{
@@ -114,12 +109,13 @@ img{
     line-height: 1.375rem;
 }
 .header{
-    /* background: url("../source/bg.webp") center / cover no-repeat; */
     color: white; 
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     position: relative;
+    padding-top: 40px;
+   
 }
 
 .bg-image{
@@ -136,22 +132,30 @@ img{
     width: 103px;
     height: auto;
 }
+
   
 .header_scrolltext{
-    font-size: 0.6875rem;
-    line-height: 15px;
-    letter-spacing: 0.23125rem;
-    text-transform: uppercase;
+
+   
+    
     margin-bottom: 71px;
     text-align: center;
     color: white;
     transition: all .2s ease-in-out;
     width: 80%;
     align-self: center;
+    
 }
-.header_scrolltext> a{
+.header_scrolltext> button{
+    font-size: 0.6875rem;
     color: inherit;
+    background: transparent;
+    border: none;
+    text-transform: uppercase;
+    line-height: 15px;
+    letter-spacing: 0.23125rem;
 }
+
 
 .header_scrolltext:hover{
     transform: scale(1.2);
@@ -212,9 +216,10 @@ img{
 
 .our-story.container{
     padding-right: 0;
+    padding-top: 63px;
+    margin-bottom: 120px;
 }
 .our-story-title{
-    margin-top: 63px;
     margin-bottom: 60px;
     position: relative;
     text-align: center;
@@ -327,13 +332,13 @@ img{
 /* our capabilities */
 
 .our-capabilities{
-    margin-top: 120px;
+    margin-bottom: 115px;
 }
 
 .our-capabilities-header-block{
     display: flex;
     justify-content: space-between;
-
+    margin-bottom: 80px;
 }
 
 
@@ -347,6 +352,7 @@ img{
     text-transform: uppercase;
     color: #48555B;
     flex-basis: 40%;
+    
 }
 
 .our-capabilities-header::after{
@@ -393,7 +399,6 @@ img{
 
 .our-capabilities-cards{
     display: flex;
-    margin-top: 80px;
     flex-wrap: nowrap;
     justify-content: flex-start;
     margin-inline: -15px;
@@ -413,7 +418,7 @@ img{
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     transition: all .2s ease-in-out;
     flex-basis: 30%;
     /* margin: 0 15px 30px 15px; */
@@ -425,8 +430,14 @@ img{
     transform: scale(1.05);
 }
 
-.our-capabilities-card-img{
+.card-image-wrapper{
     width: 65px;
+    height: 72px;
+    margin-bottom: 25px;
+}
+
+.our-capabilities-card-img{
+    width: 100%;
     height: auto;
 }
 
@@ -437,6 +448,7 @@ img{
     line-height: 24px;
     letter-spacing: 0.426667px;
     color: #48555B;
+    margin-bottom: 13px;
 }
 
 .our-capabilities-card-text{
@@ -459,7 +471,6 @@ img{
     /* background: url("../source/bg-get-in-touch.webp") center / cover no-repeat; */
     height: 499px;
     justify-content: center;
-    margin-top: 115px;
 }
 
 .get-in-touch-header{
@@ -471,6 +482,7 @@ img{
     letter-spacing: 0.15px;
     color: #48555B;
     max-width: 350px;
+    margin-bottom: 35px;
 }
 
 .get-in-touch-button{
@@ -485,7 +497,6 @@ img{
     width: 150px;
     height: 40px;
     text-transform: uppercase;
-    margin-top: 35px;
     cursor: pointer;
     transition: all .2s ease-in-out;
 }
@@ -506,6 +517,8 @@ img{
 
 /* sign up */
 
+
+
 .sign-up{
     background-color: #171819;
     margin: 0;
@@ -524,6 +537,12 @@ img{
     text-align: center;
     letter-spacing: 0.846154px;
     color: #FFFFFF;
+}
+
+.sign-up > form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .sign-up-input{
@@ -550,6 +569,7 @@ img{
     background-color: #00A4E5;
     cursor: pointer;
     transition: all .2s ease-in-out;
+    margin-left: -4px;
 }
 
 .sign-up-button:hover{
@@ -715,13 +735,13 @@ img{
     transition: all .2s ease-in-out;
 } */
 
-.icon:hover>img{
+.icon:hover{
     transform: scale(1.2);  
-    fill: #00A4E5;
+    color: #00A4E5;
     transition: all .2s ease-in-out;
 }
 
-.icon>img{
+.icon{
     transition: all .2s ease-in-out;
 }
 .icon{
@@ -787,22 +807,37 @@ img{
 }
 
 @media(max-width:730px){
-    .our-story-cards{
+
+    .our-story-block{
         flex-direction: column;
-        flex-basis: 30%;
-        margin-right: 20px;
+        margin-right: 16px;
     }
 
+    .our-story.container {
+        margin-bottom: 80px;
+    }
+  
+    .our-story-cards{
+        flex-direction: row;
+        flex-basis: auto;
+        justify-content: center;
+        margin: 0;
+    }
+
+
+    
 
     .our-story-text{
         flex-basis: 50%;
         margin-left: 20px;
+        margin-bottom: 25px;
     }
 
     .our-story-card{
         max-width: 100px;
         height: auto;
         margin-bottom: 10px;
+        max-width: 145px;
     }
 
 
@@ -848,9 +883,12 @@ img{
 
     .sign-up-input{
         margin-left: 0;
-        margin-bottom: 15px;
+        
     }
 
+    .sign-up-button{
+        margin-left: 0;
+    }
     .sign-up-header{
         margin-bottom: 15px;
     }
@@ -862,6 +900,7 @@ img{
     .faq> .container{
         flex-wrap: wrap;
         padding-block: 0;
+        padding-top: 40px;
     }
 
     .faq> .container> *{
@@ -975,6 +1014,9 @@ img{
         display: block;
     }
 
+    .our-story.container {
+        padding-right: 16px;
+    }
     .our-story-title{
         margin-bottom: 22px;
         margin-top: 50px;
@@ -1016,10 +1058,15 @@ img{
         font-weight: 400;
     }
 
+
     .header_scrolltext{
+       
+        margin-bottom: 31px;
+    }
+
+    .header_scrolltext>button{
         font-size: 11px;
         letter-spacing: normal;
-        margin-bottom: 31px;
     }
 
    
@@ -1029,25 +1076,37 @@ img{
     .menu_icon-wrap{
         flex-basis: 33.3%;
         margin: 0;
+        justify-self: end;
     }
 
     .menu_icon{
-        text-align: center;
+   
         z-index: 5;
         display: block;
         position: relative;
-        width: 30px;
-        height: 18px;
+        width: 24px;
+        height: 25px;
         cursor: pointer;
-        margin-left: 65%;
+        margin-right: 16px;
+        margin-left: auto;
+      
     }
     
+    .sign-up>form{
+        flex-direction: column;
+    }
+
+    .sign-up-input{
+        margin-bottom: 20px;
+    }
+
     .menu_icon span,
     .menu_icon::before,
     .menu_icon::after{
         left: 0;
         position: absolute;
-        height: 15%;
+        height: 5px;
+        border-radius: 10px;
         width: 100%;
         transition: all 0.3s ease 0s;
         background-color: #fff;
@@ -1076,13 +1135,15 @@ img{
     }
 
     .menu_icon._active::before{
-        top: 50%;
+        top: 45%;
         transform: rotate(-45deg) translate(0px, -50%);
+        width: 98%;
     }
     
     .menu_icon._active::after{
-        bottom: 50%;
+        bottom: 49.5%;
         transform: rotate(45deg) translate(0px, 50%);
+        width: 98%;
     }
 
 
@@ -1125,17 +1186,9 @@ img{
         font-size: 25px;
     }
 
-    .our-story-block{
-        flex-direction: column;
-    }
-
+   
   
-    .our-story-cards{
-        flex-direction: row;
-        flex-basis: auto;
-        justify-content: center;
-        margin: 0;
-    }
+   
 
     .faq> .container> *{
         flex-basis: 100%;
