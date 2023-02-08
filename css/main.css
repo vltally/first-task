@@ -227,9 +227,6 @@ img{
     cursor: default;
 }
 
-.our-story-title:hover:after{
-    width: 130px;
-}
 
 .our-story-title h2{
     text-transform: uppercase;
@@ -237,6 +234,8 @@ img{
     line-height: 25px;
     letter-spacing: 0.144140625rem;
     font-weight: 700;
+    color: #48555B;
+    ;
 }
 
 .our-story-title::after{
@@ -405,6 +404,8 @@ img{
     max-width: 978px;
 }
 
+
+
 .card-wrapper{
     padding-inline: 15px;
     margin-top: 30px;
@@ -454,7 +455,7 @@ img{
 .our-capabilities-card-text{
     font-style: normal;
     font-weight: 400;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 23px;   
     letter-spacing: 0.1875px;
     color: #48555B;
@@ -619,6 +620,7 @@ img{
 }
 
 .faq-about-company{
+    margin-left: 3px;
     font-style: normal;
     font-weight: 400;
     font-size: 11px;
@@ -852,11 +854,16 @@ img{
     
     .our-capabilities{
         margin-top: 49.5px;
+        margin-bottom: 0px;
+    }
+
+    .our-capabilities-header{
+        letter-spacing: 0.3px;
     }
 
     .our-capabilities-text{
         max-width: 600px;
-        text-align: center;
+        text-align: left;
         margin-bottom: 30px;
     }
 
@@ -893,9 +900,6 @@ img{
         margin-bottom: 15px;
     }
 
-    .get-in-touch{
-        margin-top: 20px;
-    }
 
     .faq> .container{
         flex-wrap: wrap;
@@ -909,6 +913,10 @@ img{
         margin-top: 0;
         margin-bottom: 30px;
         align-content: center;
+    }
+
+    .faq-about{
+        margin-bottom: 50px!important;
     }
 
     .icons{
@@ -931,15 +939,23 @@ img{
         margin-bottom: 24.5px;
     }
 
+    .our-capabilities-card{
+        padding: 47px 25px;    
+    }
+
+
     .our-capabilities-cards{
         margin-top: 50px;
     }
 
     .get-in-touch-header{
+        padding-inline: 10%;
         font-size: 26px;
+        margin-bottom: 30px;
     }
     .our-story-title-text{
         margin-bottom: 20px;
+        font-size: 18px;
     }
 }
 
@@ -975,10 +991,33 @@ img{
         /* background: url("../source/bg-mobile.webp") center / cover no-repeat; */
     }
 
-    .our-story-card-text{
-        left: 40%;
+    .our-story-title::after{
+        bottom: -10px;
     }
 
+    .our-story-card-text{
+        left: 43%;
+        line-height: 21px;
+        font-size: 17px;
+        font-weight: 800;
+    }
+
+    .our-story-card:first-child{
+        margin-left: 0;
+    }
+
+    .our-story-card:last-child{
+        margin-right: 0;
+    }
+
+    .our-story-title h2{
+        letter-spacing: 0.3px;
+    }
+
+    .our-story-card{
+        margin-inline: 6px;
+        margin-bottom: 0;
+    }
     .get-in-touch{
         /* background: url("../source/bg-get-in-touch-moblie.webp") center / cover no-repeat; */
     }
@@ -992,6 +1031,10 @@ img{
         display: block;
         position: absolute;
         z-index: 5;
+    }
+
+    .card-wrapper:first-child{
+        margin-top: 0;
     }
 
     .nav-konstruct{
@@ -1016,10 +1059,11 @@ img{
 
     .our-story.container {
         padding-right: 16px;
+        margin-bottom: 50px;
+        padding-top: 50px;
     }
     .our-story-title{
         margin-bottom: 22px;
-        margin-top: 50px;
     }
     .empty{
         flex-basis: 33.3%;
@@ -1038,9 +1082,14 @@ img{
         padding-top: 31px;
         display: none;
     }
+
+    .our-capabilities-header-block{
+        margin-bottom: 0px;
+    }
     
     .header_block{
         padding-top: 161px;
+        padding-bottom: 161px;
     }
     
     
@@ -1048,6 +1097,9 @@ img{
         font-size: 40px;
         letter-spacing: normal;
         align-items: center;
+        padding-inline: 20%;
+        line-height: 37px;
+        margin-bottom: 18px;
     }
 
     .header_text{
@@ -1069,7 +1121,9 @@ img{
         letter-spacing: normal;
     }
 
-   
+    .our-story-block{
+        margin-right: 0;
+    }
 
 
 
@@ -1184,10 +1238,7 @@ img{
         width: 100%;
         margin: 0 0 70px 0;
         font-size: 25px;
-    }
-
-   
-  
+    }  
    
 
     .faq> .container> *{
@@ -1203,7 +1254,11 @@ img{
         margin-left: 10px;
     }
 
+    .faq-about-p{
+        max-width: 270px;
+    }
     
+
     .faq> .container> *> *:not(.faq-about-p , .faq-about-company){
         font-size: 14px;
     }
@@ -1232,9 +1287,4 @@ img{
     }
 }
 
-@media (max-width: 380px) {
-    .our-story-card-text{
-        font-size: 12px;
-    }
-}
 
